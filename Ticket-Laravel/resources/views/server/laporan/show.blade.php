@@ -114,8 +114,12 @@
               <td class="text-right">Rp. {{ number_format($data->total, 0, ',', '.') }}</td>
             </tr>
             <tr>
+              <td>Kode Pembayaran</td>
+              <td class="text-right">{{ rand() }}</td>
+            </tr>
+            <tr>
               <td>Metode Pembayaran</td>
-              <td class="text-right"><a href="http://">Via Bank X</a><br><a href="http://">Via Bank Y</a><br><a href="http://">Via Bank Z</a></td>
+              <td class="text-right">Bank Mandiri &nbsp; 0700 000 899 995 <br>Bank BCA &nbsp; 735 025 2527 <br>Bank BNI &nbsp; 023 657 2099</td>
             </tr>
             <tr>
               <td>Konfirmasi Pembayaran</td>
