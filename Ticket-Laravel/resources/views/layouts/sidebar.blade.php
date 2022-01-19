@@ -22,9 +22,9 @@
     </a>
     <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
-        <a class="collapse-item" href="{{ route('rute.index') }}">Rute</a>
-        <a class="collapse-item" href="{{ route('transportasi.index') }}">Transportasi</a>
         <a class="collapse-item" href="{{ route('category.index') }}">Category</a>
+        <a class="collapse-item" href="{{ route('transportasi.index') }}">Transportasi</a>
+        <a class="collapse-item" href="{{ route('rute.index') }}">Rute</a>
         <a class="collapse-item" href="{{ route('user.index') }}">User</a>
       </div>
     </div>
