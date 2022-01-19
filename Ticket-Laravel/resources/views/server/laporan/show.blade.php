@@ -114,6 +114,14 @@
               <td class="text-right">Rp. {{ number_format($data->total, 0, ',', '.') }}</td>
             </tr>
             <tr>
+              <td>Metode Pembayaran</td>
+              <td class="text-right"><a href="http://">Via Bank X</a><br><a href="http://">Via Bank Y</a><br><a href="http://">Via Bank Z</a></td>
+            </tr>
+            <tr>
+              <td>Konfirmasi Pembayaran</td>
+              <td class="text-right"><i class="fab fa-whatsapp"></i> <a target="__blank" href="http://wa.me/082120102241"> WhatsApp</a></td>
+            </tr>
+            <tr>
               <td>Status Pembayaran</td>
               <td class="text-right">{{ $data->status }}</td>
             </tr>

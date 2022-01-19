@@ -157,7 +157,7 @@
         </div>
       </div>
       <!-- Footer -->
-      <footer class="sticky-footer bg-white" style="bottom: 0%; text-align: center; position:fixed; width:100%">
+      <footer class="sticky-footer bg-white" style="bottom: 0%; text-align: center; width:100%">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>

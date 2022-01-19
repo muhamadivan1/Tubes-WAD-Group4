@@ -9,7 +9,7 @@
           <div class="col-12">
             <div class="p-5">
               <div class="text-center">
-                <h1 class="h4 text-gray-900 mb-4">Selamat Datang!</h1>
+                <h1 class="h4 text-gray-900 mb-4">Selamat Datang di Web <br> PO Haryanto!</h1>
               </div>
               <form method="POST" action="{{ route('login') }}" class="user">
               @csrf
@@ -41,7 +41,7 @@
               </form>
               <hr>
               <div class="text-center">
-                <a class="small" href="{{ route('register') }}">Buat Akun!</a>
+                Belum mempunyai akun? <a href="{{ route('register') }}">Buat Akun!</a>
               </div>
             </div>
           </div>
