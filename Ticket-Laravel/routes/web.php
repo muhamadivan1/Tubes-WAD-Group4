@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes(); //bawaan library laravel, gunanya uspaya tidak membuat login register dari awal, bisa dilihat dari composer.json
+Auth::routes(); //bawaan library laravel-ui, gunanya supaya tidak membuat login register dari awal, bisa dilihat dari composer.json
 
-Route::middleware(['auth'])->group(function () {    //mengatur hak akses atuh   middleware:berguna supaya tidak membuat file banyak
+Route::middleware(['auth'])->group(function () {    //mengatur hak akses atuh   middleware:untuk memvalidasi apakah udah login atau belum
     Route::get('/pengaturan', [App\Http\Controllers\UserController::class, 'create'])->name('pengaturan');
     Route::post('/edit/name', [App\Http\Controllers\UserController::class, 'name'])->name('edit.name');
     Route::post('/edit/password', [App\Http\Controllers\UserController::class, 'password'])->name('edit.password');

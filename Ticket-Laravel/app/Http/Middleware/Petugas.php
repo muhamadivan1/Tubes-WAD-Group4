@@ -14,7 +14,7 @@ class Petugas
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next) //menagrahkan auth ke menu penumpang
+    public function handle(Request $request, Closure $next) //mengarahkan auth ke menu penumpang
     {
         if ($request->user()->level == "Penumpang") {
             return redirect('/');

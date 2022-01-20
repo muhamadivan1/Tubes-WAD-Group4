@@ -62,9 +62,9 @@ class RuteController extends Controller
         );
 
         if ($request->id) { //kalo berhasil, update diarahkan ke index
-            return redirect()->route('rute.index')->with('success', 'Success Update Rute!');
+            return redirect()->route('rute.index')->with('success', 'Sukses Mengupdate Rute!');
         } else {   
-            return redirect()->back()->with('success', 'Success Add Rute!');
+            return redirect()->back()->with('success', 'Sukses Menambah Rute!');
         }
     }
 
@@ -113,6 +113,6 @@ class RuteController extends Controller
     public function destroy($id)    //menghapus data
     {
         Rute::find($id)->delete();
-        return redirect()->back()->with('success', 'Success Delete Rute!');
+        return redirect()->back()->with('success', 'Sukses Menghapus Rute!');
     }
 }

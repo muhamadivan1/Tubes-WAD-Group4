@@ -52,7 +52,7 @@ class UserController extends Controller
             'level' => $request->level
         ]);
 
-        return redirect()->back()->with('success', 'Success Add User!');
+        return redirect()->back()->with('success', 'Sukses Menambah User!');
     }
 
     /**
@@ -98,7 +98,7 @@ class UserController extends Controller
     public function destroy($id)    //menghapus
     {
         User::find($id)->delete();
-        return redirect()->back()->with('success', 'Success Delete User!');
+        return redirect()->back()->with('success', 'Sukses Menghapus User!');
     }
 
     public function name(Request $request)  //memanggil nama user berdasarkan id user

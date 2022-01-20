@@ -58,9 +58,9 @@ class TransportasiController extends Controller
         );
 
         if ($request->id) {
-            return redirect()->route('transportasi.index')->with('success', 'Success Update Transportasi!');
+            return redirect()->route('transportasi.index')->with('success', 'Sukses mengupdate Transportasi!');
         } else {
-            return redirect()->back()->with('success', 'Success Add Transportasi!');
+            return redirect()->back()->with('success', 'Sukses menambahkan Transportasi!');
         }
     }
 
@@ -109,6 +109,6 @@ class TransportasiController extends Controller
     public function destroy($id)
     {
         Transportasi::find($id)->delete();
-        return redirect()->back()->with('success', 'Success Delete Transportasi!');
+        return redirect()->back()->with('success', 'Sukses Menghapus Transportasi!');
     }
 }

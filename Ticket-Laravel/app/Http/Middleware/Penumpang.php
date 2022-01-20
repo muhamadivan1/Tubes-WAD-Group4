@@ -16,7 +16,7 @@ class Penumpang
      */
     public function handle(Request $request, Closure $next) //mengarahkan atuh ke menu admin
     {
-        if ($request->user()->level == "Admin") {
+        if ($request->user()->level == "Admin") {   //apakah seorang admin atau petugas
             return redirect('/home');
         } else if ($request->user()->level == "Petugas") {
             return redirect('/petugas');
